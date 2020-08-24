@@ -11,6 +11,9 @@ It also deletes the oldest .zip based on the $daysToKeepBackup variable
   - $daysToKeepBackup, change this variable to how many days you want to keep the backup before the script deletes it. 
 
 ### Schedule for backup
-Add this script to the task scheduler on your windows minecraft server
-Under action you type:
-  "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"  -ExecutionPolicy Bypass "minecraftbackup.ps1 file location" 
+Add this script to the Task Scheduler on your Windows machine that runs either the Minecraft client or server.  
+  
+  Under action when you create the task:
+```
+"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"  -ExecutionPolicy Bypass "minecraftbackup.ps1 file location" 
+```
