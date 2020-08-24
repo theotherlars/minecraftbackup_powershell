@@ -8,7 +8,7 @@ Required changes to the script:
 Optional changes to the script:
   - $daysToKeepBackup, change this variable to how many days you want to keep the backup before the script deletes it. 
 
-FOR SCHEDULED BACKUP
+FOR SCHEDULED BACKUP:
 Add this script to the task scheduler on your windows minecraft server
 Under action you type:
   "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"  -ExecutionPolicy Bypass "minecraftbackup.ps1 file location" 
